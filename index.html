@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <img src="New Project.png" alt="Logo" height="300" width="300">
+    <h2>Created by Max Yang</h2>
+   
+    <link rel="icon" type="image/png" href="tree.png">
+
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, lightgreen, #b6fbff); /* Gradient background */
+            margin: 0;
+            padding: 0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background-color: #007bff;
+            margin: 0;
+        }
+        .tabs li {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .tabs li.active {
+            background-color: #0056b3;
+        }
+        .tabs li:hover {
+            background-color: #0056b3;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Home</li>
+        <li data-tab-target="#methodology" class="active tab">Methodology</li>
+        <li data-tab-target="#equation" class="tab">Equation</li>
+        <li data-tab-target="#recommendations" class="tab">Tree Recommendations</li>
+        <li data-tab-target="#calculator" class="tab">Calculator</li>
+    </ul>
+    
+    <div class="tab-content active" id="home">
+        <h1>Home</h1>
+        <header>
+            <p>Hello! 
+            <p>Welcome to Down to the Roots: A Carbon Emissions Calculator!
+            <p>This website contains a calculator to estimate the number of trees needed to offset a community's carbon emissions. Input your community's data and get an estimate!</p>
+            <br/>
+            <hr>
+        </div>
+    <div class="tab-content active" id="methodology">
+        <h1>The Methodology</h1>
+        <p>This project was based on Fermi Question principles, so the answer is just an estimation. It is meant to provide people with tangible goals as steps toward stopping global warming.</p>
+    
+        <p>Fermi Questions are a method for making quick estimates of quantities that are difficult or impossible to measure directly. In the context of climate change, this approach can be very useful.</p>
+    
+        <p>While the results may not be precise, they provide people with a concrete reference point and motivation to take action. This way, the abstract problem of climate change becomes more tangible and easier to understand.</p>
+    </div>
+
+    <div class="tab-content" id="recommendations">
+        <h1>Recommendations for Types of Trees</h1>
+        <p>American Sycamore: Costs $650 and sequesters 454 kg of CO2 annually. low maintenance and fast growing shade trees. They are tough and sturdy, tolerating extreme weather conditions, pollution, salt and even wet soils. These adaptable and hardy shade trees have a very long life expectancy. These trees are best if you are on a tight budget.</p>
+        <img src="AmericanSycamore.jpeg" alt="AmericanSycamore" height="600" width="600">
+        <br/>
+        <p>Norway Spruce: Costs $946 and sequesters 750 kg of CO2 annually. This tree is tolerant and adaptable. The Norway Spruce tolerates pollution and drought and is deer resistant. It also adapts to any well drained soil and stands up to heavy snow and wind. This sturdy evergreen tree is also extremely cold hardy growing in the coldest regions in the US down to a frigid growing zone 2. Last, Picea abies makes a fabulous large privacy hedge, windbreak, or sound barrier. It is great if you are not on a budget, as it is the most effecient out of these three trees.</p>
+        <img src="NorwaySpruce.jpeg" alt="NorwaySpruce" height="600" width="600">
+        <br/>
+        <p>Northern Red Oak: Costs $1,260 and sequesters 204 kg of CO2 annually. This stunning tree grows fast and provides superb shade in the heat of summer.
+           It is an extremely fast growing tree that can reach an impressive height of 75 feet and a spread of 45 feet. Wow! Now that is a big tree. Because of its hard wood, this hardy tree has the ability to grow to massive heights and sustain a long life span.
+            This tree is adaptable and tolerant, making it super easy to grow and no maintenance once it's established! This tree is perfect if you want to spend more money on a more beautiful tree and is still effecient in carbon sequestration.
+            </p>
+        <img src="NorthernRedOak.jpeg" alt="NorthernRedOak" height="600" width="600">
+        <hr>
+    </div>
+
+    <div class="tab-content" id="equation">
+        <h1>The Equation</h1>
+        <div style="text-align: center;"> 
+            <div style="font-size: 1.5em; line-height: 1.2;"> 1.596n - (0.02t + 0.9g) </div> 
+            <div style="font-size: 1.5em; line-height: 1.2;"> x = ─────────────────────── </div> 
+            <div style="font-size: 1.5em; line-height: 1.2;"> c </div>
+         </div>
+         <h3>x = number of trees you need</h3>
+         <h3>t = number of trees already present in the community</h3>
+         <h3>g = amount of grass already present in the community</h3>
+         <h3>c = amount of carbon dioxide the chosen tree can sequester</h3>
+
+    </div>
+
+    <div class="tab-content" id="calculator">
+        <div class="container">
+            <h2>Offset Carbon Emissions</h2>
+            <form id="offsetForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="people">Number of Households in the Community</label>
+                <input type="text" id="people" name="people" required>
+
+                <label for="trees">Number of Trees Present in the Community</label>
+                <input type="text" id="trees" name="trees" required>
+
+                <label for="grass">Amount of Grass (m²) Present in the Community</label>
+                <input type="text" id="grass" name="grass" required>
+
+                <label for="type_of_tree">Type of Tree</label>
+                <select id="type_of_tree" name="type_of_tree" required>
+                    <option value="American Sycamore">American Sycamore</option>
+                    <option value="Norway Spruce">Norway Spruce</option>
+                    <option value="Northern Red Oak">Northern Red Oak</option>
+                </select>
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            <p id="greeting"></p>
+            <p id="treeCount"></p>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.tabs li');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(tab => tab.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                tab.classList.add('active');
+                const target = document.querySelector(tab.dataset.tabTarget);
+                target.classList.add('active');
+            });
+        });
+
+        // Form handling and calculations
+        document.getElementById('offsetForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const people = parseInt(document.getElementById('people').value);
+            const trees = parseInt(document.getElementById('trees').value);
+            const grass = parseInt(document.getElementById('grass').value);
+            const typeTree = document.getElementById('type_of_tree').value;
+
+            let t = 0;
+            let c = 0;
+
+            // Calculate values based on tree type
+            if (typeTree === "American Sycamore") {
+                t = 454;
+                c = 650;
+            } else if (typeTree === "Norway Spruce") {
+                t = 750;
+                c = 946;
+            } else {
+                t = 204;
+                c = 1260
+        }
+
+        var additionalTreesMIN = (1.596 * people * 2.49 - 0.02 * trees - 0.9 * grass) / (t * 0.001);
+       
+        var costMIN = Math.round(additionalTreesMIN) * c;
+
+        // Display the results
+        document.getElementById('greeting').textContent = 'Hello, ' + name;
+        document.getElementById('treeCount').textContent = 'To completely offset the carbon emissions of your community, you would need to plant a range from ' + Math.round(additionalTreesMIN) + ' more trees. That would cost you $' + costMIN;
+        document.getElementById('result').style.display = 'block';
+    });
+</script>
+            </div>
+    </div>
+</body>
+</html>
